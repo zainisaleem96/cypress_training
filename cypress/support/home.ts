@@ -37,15 +37,13 @@ class HomePage{
         cy.get('#item-1').click();
         //cy.get('.rct-title').should('have.text','Home').click();
         cy.get('.rct-collapse').click();
-        cy.get('.rct-title')
-  .should('have.text', 'Documents').click();
+        cy.get('ol > li:nth-child(2) span.rct-title').click();
+       // cy.get('.rct-title').should('have.text', 'Documents').click();
 }
     verifyRadioButton(){
         cy.get('.card-body h5').contains('Elements').click();
         cy.get('#item-2').click();
         cy.get(':nth-child(3) > :nth-child(3)').click();
     }
-
-    
 }
 export default HomePage

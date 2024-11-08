@@ -22,11 +22,11 @@ context('Actions', ()=> {
 it('Verify Elements menu item', ()=> {
   homePage.verifyElements();
 
-})  
+})  */
 it('Verify CheckBox menu item', ()=> {
   homePage.verifyCheckBox();
 
-})*/
+})
 it('Verify CheckBox menu item', ()=> {
   homePage.verifyRadioButton();
 
