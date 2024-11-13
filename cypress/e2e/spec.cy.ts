@@ -1,5 +1,6 @@
 
 import HomePage from '../support/home';
+import '../support/commands';
 
 context('Actions', ()=> {
 
@@ -7,10 +8,11 @@ context('Actions', ()=> {
 
     beforeEach(()=>{
         cy.visit('https://demoqa.com/',{ failOnStatusCode: false});
-        cy.get
+        
     })
 
-  /*  it('Verify reached successfully', ()=> {
+    
+    it('Verify reached successfully', ()=> {
         homePage.verifyPageLoadedSuccessfully();
  })
     it('Verify total number of menus', ()=> {
@@ -19,16 +21,29 @@ context('Actions', ()=> {
     it('Verify each menu item', ()=> {
     homePage.verifyEachMenu();
 })  
-it('Verify Elements menu item', ()=> {
-  homePage.verifyElements();
+    it('Verify Elements menu item', ()=> {
+    homePage.verifyElements();
 
-})  */
-it('Verify CheckBox menu item', ()=> {
-  homePage.verifyCheckBox();
+}) 
+
+    it('Verify CheckBox menu item', ()=> {
+    homePage.verifyCheckBox();
 
 })
-it('Verify CheckBox menu item', ()=> {
+ 
+it('Verify RadioButton menu item', ()=> {
   homePage.verifyRadioButton();
-
+}) 
+it('Verify WebTables menu item', ()=> {
+  homePage.verifyWebTables();
 })
+it('Verify Buttons menu item', ()=> {
+  homePage.verifyButtons();
+})   
+
+it('Verify Links menu item', ()=> {
+  homePage.verifyLinks();
+})    
+
+
 })
